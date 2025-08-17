@@ -27,5 +27,5 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add informal.json
-          git commit -m "Actualización automática: $(informal -u)"
+          git commit -m "Actualización automática: $(date -u)"
           git push
