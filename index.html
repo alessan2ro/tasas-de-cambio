@@ -17,6 +17,12 @@
     <a href="https://play.google.com/store/apps/details?id=com.arr.bancamovil" class="download-btn" target="_blank" rel="noopener">Descargar App</a>
     <div id="tasas"></div>
 
+    <!-- Diálogo pidiendo la instalación de la web como PWA -->
+    <div id="install-dialog" style="display:none; position:fixed; bottom:32px; left:0; right:0; margin:auto; max-width:320px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.15); border-radius:12px; padding:20px; text-align:center; z-index:1000;">
+      <p>¿Quieres instalar Cuba Divisas como app?</p>
+      <button id="install-btn" style="padding:8px 24px; border:none; border-radius:8px; background:#0072ff; color:#fff; font-weight:bold;">Instalar App</button>
+    </div>
+
     <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {

@@ -35,3 +35,25 @@ self.addEventListener('fetch', event => {
       .then(response => response || fetch(event.request))
   );
 });
+
+let deferredPrompt;
+const dialog = document.getElementById('install-dialog');
+const installBtn = document.getElementById('install-btn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  dialog.style.display = 'block';
+});
+
+if (installBtn) {
+  installBtn.addEventListener('click', () => {
+    dialog.style.display = 'none';
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        deferredPrompt = null;
+      });
+    }
+  });
+}

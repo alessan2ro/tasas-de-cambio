@@ -114,3 +114,30 @@ h1 {
         font-size: 1em;
     }
 }
+
+/* Modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #181c20;
+    color: #e4e6eb;
+  }
+  .main-header {
+    background: #23272b;
+  }
+  .header-title {
+    color: #e4e6eb;
+  }
+  .rate {
+    background: #23272b;
+    color: #e4e6eb;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    border: 2px solid #333;
+  }
+  .download-btn {
+    background: linear-gradient(90deg, #23272b 0%, #3a3f44 100%);
+    color: #e4e6eb;
+  }
+  .download-btn:hover {
+    background: linear-gradient(90deg, #333 0%, #444 100%);
+  }
+}
