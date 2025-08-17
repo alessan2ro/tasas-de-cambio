@@ -1,4 +1,4 @@
-const url = "https://san2ro.github.io/exchange-rate/informal.json";
+const url = "https://san2ro.github.io/tasas-de-cambio/informal.json";
 
 const monedasInfo = {
     "USD":{ nombre: "Dólar estadounidense", icon: "assets/icons/usa.svg"},
