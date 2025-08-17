@@ -83,7 +83,7 @@ h1 {
     .rate {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px;
+        padding: 20px;
     }
     .rate img {
         margin-bottom: 10px;
@@ -95,7 +95,7 @@ h1 {
 }
 @media (max-width: 600px) {
     body {
-        padding: 5px;
+        padding: 20px;
     }
     h1 {
         font-size: 1.3em;
@@ -137,7 +137,7 @@ h1 {
     color: #e4e6eb !important;
   }
   .download-btn {
-    background: linear-gradient(90deg, #23272b 0%, #3a3f44 100%);
+    background: linear-gradient(90deg, #23272b 0%, #26282b 100%);
     color: #e4e6eb;
   }
   .download-btn:hover {
