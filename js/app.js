@@ -1,8 +1,9 @@
 const url = "https://san2ro.github.io/tasas-de-cambio/informal.json";
 
 const monedasInfo = {
-    "USD":{ nombre: "Dólar estadounidense", icon: "assets/icons/usa.svg"},
-    "ECU":{ nombre: "Euro", icon: "assets/icons/europe.svg"}
+    "USD":{ nombre: "USD", icon: "assets/icons/usa.svg"},
+    "ECU":{ nombre: "EUR", icon: "assets/icons/europe.svg"},
+    "MLC":{ nombre: "MLC", icon: "assets/icons/cuba.svg"}
 };
 
 async function obtenerTasas() {
