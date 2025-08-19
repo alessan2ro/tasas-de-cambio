@@ -1,4 +1,4 @@
-const url = "https://san2ro.github.io/tasas-de-cambio/informal.json";
+const url = "https://cubadivisas.vercel.app/informal.json";
 
 const monedasInfo = {
     "USD":{ nombre: "USD", icon: "assets/icons/usa.svg"},
