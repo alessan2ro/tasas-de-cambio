@@ -48,8 +48,7 @@ h1 {
 }
 
 /* Button Styles */
-.download-btn {
-
+.download-btn {    
     bottom: 60px; 
     display: block;
     margin: 0 auto 24px auto;

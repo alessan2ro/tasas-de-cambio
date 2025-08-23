@@ -83,4 +83,9 @@ function mostrarTasas(tasas) {
     */
 }
 
-obtenerTasas();
+// Esperar a que cargue el DOM
+document.addEventListener("DOMContentLoaded", () => {
+  inputCantidad.value = 1;       // valor por defecto
+  editandoArriba = true;         // forzar edición arriba
+  obtenerTasas();                // cargar tasas y luego actualizar
+});
