@@ -1,40 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Tasas de cambio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-    <link rel="manifest" href="manifest.json">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
     <header class="main-header">
-        <img src="assets/icons/icon-192.png" alt="Cuba Icon" width="50" height="50">
-        <span class="header-title">Cuba Divisas</span>
+      <img
+        src="assets/icons/icon-192.png"
+        alt="Cuba Icon"
+        width="50"
+        height="50"
+      />
+      <span class="header-title">Cuba Divisas</span>
     </header>
-    <a href="https://play.google.com/store/apps/details?id=com.arr.bancamovil" class="download-btn" target="_blank" rel="noopener">Android App</a>
-    <div id="tasas"></div>
+  
 
-    <!-- Diálogo pidiendo la instalación de la web como PWA
-    <div id="install-dialog">
-      <p>¿Quieres instalar Cuba Divisas como app?</p>
-      <button id="install-btn">Instalar App</button>
-    </div>
--->
+  <div class="card-view">
+
+  <div class="input-row">
+    <select id="moneda-select">
+      <option value="USD">USD</option>
+      <option value="ECU">EUR</option>
+      <option value="MLC">MLC</option>
+    </select>
+    <input type="number" id="input-cantidad" placeholder="Cantidad">
+  </div>
+
+
+  <div class="input-row">
+     <select id="moneda-select">
+      <option value="#">CUP</option>
+    </select>
+    <input type="number" id="output-cantidad" placeholder="0">
+  </div>
+</div>
+
+
+      <a
+      href="https://play.google.com/store/apps/details?id=com.arr.bancamovil"
+      class="download-btn"
+      target="_blank"
+      rel="noopener">Android App</a>
+
+
+    <footer class="main-footer">
+      <p>
+        Datos obtenidos de <a href="https://www.eltoque.com/" target="_blank"
+          >elToque</a
+        >
+      </p>
+      <p>&copy; 2025 Cuba Divisas v2</p>
+    </footer>
+
+    
+      <div id="tasas"></div>
 
     <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('sw.js').then(function(registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-    }, function(err) {
-      console.log('Service Worker registration failed:', err);
-    });
-  });
-}
-</script>
-    <script src="js/app.js"></script> 
-</body>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js").then(
+            function (registration) {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope
+              );
+            },
+            function (err) {
+              console.log("Service Worker registration failed:", err);
+            }
+          );
+        });
+      }
+    </script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

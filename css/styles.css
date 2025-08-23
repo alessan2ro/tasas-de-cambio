@@ -49,6 +49,8 @@ h1 {
 
 /* Button Styles */
 .download-btn {
+
+    bottom: 60px; 
     display: block;
     margin: 0 auto 24px auto;
     padding: 12px 32px;
@@ -70,6 +72,60 @@ h1 {
     background: linear-gradient(90deg, #3DE88F 0%, #3DE88F 100%);
     transform: translateY(-2px) scale(1.03);
 }
+
+.card-view {
+  max-width: 350px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+#moneda-select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 12px;
+  font-size: 1em;
+}
+
+#input-cantidad, #output-cantidad {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+
+.main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.main-footer a {
+  color: #1eff96; 
+  text-decoration: none;
+}
+
+.main-footer a:hover {
+  color: #51ff00;
+  text-decoration: underline;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -143,4 +199,16 @@ h1 {
   .download-btn:hover {
     background: linear-gradient(90deg, #333 0%, #444 100%);
   }
+  .card-view {
+    background: #23272b;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    border: 2px solid #333;
+
+  }
+
+    #moneda-select, #input-cantidad, #output-cantidad {
+        background: #2c2f33;
+        color: #e4e6eb;
+        border: 1px solid #444;
+    }
 }
