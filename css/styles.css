@@ -1,84 +1,85 @@
-body{
-    padding: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    background-color: rgb(249, 252, 255);
+body {
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(249, 252, 255);
 }
 h1 {
-  color:#333;
+  color: #333;
 }
 
-.rate{
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 12px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+.rate {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .rate img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 .rate span {
-    flex: 1;
+  flex: 1;
 }
 
 .rate strong {
-    font-size: 1.2em;
-    color: #333;
+  font-size: 1.2em;
+  color: #333;
 }
 
 /* Header Styles */
 .main-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
 .header-title {
-    font-size: 2em;
-    color: #333;
-    font-weight: bold;
+  font-size: 2em;
+  color: #333;
+  font-weight: bold;
 }
 
 /* Button Styles */
-.download-btn {    
-    bottom: 60px; 
-    display: block;
-    margin: 0 auto 24px auto;
-    padding: 12px 32px;
-    max-width: 250px; /* Limita el ancho */
-    width: auto;      /* No ocupa todo el ancho */
-    background: linear-gradient(90deg, #3DE88F 0%, #7FFE53 100%);
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: 600;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    text-align: center;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.2s;
+.download-btn {
+  bottom: 60px;
+  display: block;
+  margin: 0 auto 24px auto;
+  padding: 12px 32px;
+  max-width: 250px; /* Limita el ancho */
+  width: auto; /* No ocupa todo el ancho */
+  background: linear-gradient(90deg, #3de88f 0%, #7ffe53 100%);
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .download-btn:hover {
-    background: linear-gradient(90deg, #3DE88F 0%, #3DE88F 100%);
-    transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(90deg, #3de88f 0%, #3de88f 100%);
+  transform: translateY(-2px) scale(1.03);
 }
 
 .card-view {
-  max-width: 350px;
+  max-width: 380px;
   margin: 32px auto;
   padding: 24px;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .input-row {
@@ -88,27 +89,28 @@ h1 {
 }
 
 #moneda-select {
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
   margin-right: 12px;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
-#input-cantidad, #output-cantidad {
+#input-cantidad,
+#output-cantidad {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 1em;
+  font-size: 1.3em;
 }
-
 
 .main-footer {
   position: fixed;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  padding: 10px 0;
   text-align: center;
   margin-top: 40px;
   color: #666;
@@ -116,58 +118,59 @@ h1 {
 }
 
 .main-footer a {
-  color: #1eff96; 
+  color: #1eff96;
   text-decoration: none;
 }
 
 .main-footer a:hover {
-  color: #51ff00;
+  color: #8fe269;
   text-decoration: underline;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    h1 {
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .rate {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-    }
-    .rate img {
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-    .rate span, .rate strong {
-        font-size: 1.1em;
-    }
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .rate {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .rate img {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .rate span,
+  .rate strong {
+    font-size: 1.1em;
+  }
 }
 @media (max-width: 600px) {
-    body {
-        padding: 20px;
-    }
-    h1 {
-        font-size: 1.3em;
-        text-align: center;
-    }
-    .rate {
-        flex-direction: row;
-        align-items: center;
-        padding: 8px;
-    }
-    .rate img {
-        margin-bottom: 0;
-        margin-right: 8px;
-    }
-    .rate span, .rate strong {
-        font-size: 1em;
-    }
+  body {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .rate {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+  }
+  .rate img {
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+  .rate span,
+  .rate strong {
+    font-size: 1em;
+  }
 }
 
 /* Modo oscuro automático */
@@ -185,10 +188,11 @@ h1 {
   .rate {
     background: #23272b !important;
     color: #e4e6eb !important;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
     border: 2px solid #333;
   }
-  .rate span, .rate strong {
+  .rate span,
+  .rate strong {
     color: #e4e6eb !important;
   }
   .download-btn {
@@ -200,14 +204,15 @@ h1 {
   }
   .card-view {
     background: #23272b;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
     border: 2px solid #333;
-
   }
 
-    #moneda-select, #input-cantidad, #output-cantidad {
-        background: #2c2f33;
-        color: #e4e6eb;
-        border: 1px solid #444;
-    }
+  #moneda-select,
+  #input-cantidad,
+  #output-cantidad {
+    background: #2c2f33;
+    color: #e4e6eb;
+    border: 1px solid #444;
+  }
 }

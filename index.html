@@ -19,47 +19,42 @@
       />
       <span class="header-title">Cuba Divisas</span>
     </header>
-  
 
-  <div class="card-view">
+    <div class="card-view">
+      <div class="input-row">
+        <select id="moneda-select">
+          <option value="USD">USD</option>
+          <option value="ECU">EUR</option>
+          <option value="MLC">MLC</option>
+        </select>
+        <input type="number" id="input-cantidad" placeholder="Cantidad" />
+      </div>
 
-  <div class="input-row">
-    <select id="moneda-select">
-      <option value="USD">USD</option>
-      <option value="ECU">EUR</option>
-      <option value="MLC">MLC</option>
-    </select>
-    <input type="number" id="input-cantidad" placeholder="Cantidad">
-  </div>
+      <div class="input-row">
+        <select id="moneda-select">
+          <option value="#">CUP</option>
+        </select>
+        <input type="number" id="output-cantidad" placeholder="0" />
+      </div>
+    </div>
 
-
-  <div class="input-row">
-     <select id="moneda-select">
-      <option value="#">CUP</option>
-    </select>
-    <input type="number" id="output-cantidad" placeholder="0">
-  </div>
-</div>
-
-
-      <a
+    <a
       href="https://play.google.com/store/apps/details?id=com.arr.bancamovil"
       class="download-btn"
       target="_blank"
-      rel="noopener">Android App</a>
-
+      rel="noopener"
+      >Android App</a
+    >
 
     <footer class="main-footer">
       <p>
-        Datos obtenidos de <a href="https://www.eltoque.com/" target="_blank"
-          >elToque</a
-        >
+        Datos obtenidos de
+        <a href="https://www.eltoque.com/" target="_blank">elToque</a>
       </p>
       <p>&copy; 2025 Cuba Divisas v2</p>
     </footer>
 
-    
-      <div id="tasas"></div>
+    <div id="tasas"></div>
 
     <script>
       if ("serviceWorker" in navigator) {
