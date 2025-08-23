@@ -1,4 +1,4 @@
-const url = "https://san2ro.github.io/tasas-de-cambio/informal.json";
+const url = "https://cubadivisas.vercel.app/informal.json";
 
 const monedasInfo = {
     "USD": { nombre: "USD", icon: "assets/icons/usa.svg" },
@@ -83,9 +83,4 @@ function mostrarTasas(tasas) {
     */
 }
 
-// Esperar a que cargue el DOM
-document.addEventListener("DOMContentLoaded", () => {
-  inputCantidad.value = 1;       // valor por defecto
-  editandoArriba = true;         // forzar edición arriba
-  obtenerTasas();                // cargar tasas y luego actualizar
-});
+obtenerTasas();
