@@ -15,7 +15,16 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # <<< IMPORTANTE
+          fetch-depth: 0
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Sincronizar con remoto
+        run: |
+          git pull origin main
 
       - name: Obtener datos de la API
         env:
@@ -31,13 +40,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-          # Traer cambios remotos para evitar rechazo
-          git pull origin main --rebase
-
           git add informal.json
           git commit -m "Actualización automática: $(date -u)" || echo "No hay cambios"
-
           git push origin main
