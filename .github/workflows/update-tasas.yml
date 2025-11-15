@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # <<< IMPORTANTE
 
       - name: Obtener datos de la API
         env:
@@ -31,6 +33,11 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+
+          # Traer cambios remotos para evitar rechazo
+          git pull origin main --rebase
+
           git add informal.json
-          git commit -m "Actualización automática: $(date -u)"
-          git push https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:main
+          git commit -m "Actualización automática: $(date -u)" || echo "No hay cambios"
+
+          git push origin main
