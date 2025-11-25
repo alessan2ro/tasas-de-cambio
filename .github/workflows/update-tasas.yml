@@ -51,21 +51,15 @@ jobs:
             echo "::set-output name=has_new_data::false"
             echo "¡ERROR! La respuesta no parece ser JSON válido. No se guardará el archivo."
           fi
-        # Los outputs necesitan usar la sintaxis set-output
-        # para que sean accesibles en pasos posteriores, aunque para esta solución ya no es estrictamente necesario,
-        # lo he simplificado en el siguiente paso.
-
-      # El siguiente paso ahora será condicional
+        
       - name: Subir cambios al repositorio
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Solo hacemos 'git add' si el archivo informal.json cambió.
-          # Esto se comprueba implícitamente por 'git commit'.
+          
           git add informal.json
           
-          # Si no hay cambios, 'git commit' fallará, por eso usamos '|| echo "No hay cambios"'.
-          # Esta es una buena práctica y la estás usando correctamente.
+      
           git commit -m "Actualización automática: $(date -u)" || echo "No hay cambios"
           
           git push origin main
