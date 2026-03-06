@@ -47,51 +47,41 @@ h1 {
 .main-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
   margin-bottom: 20px;
 }
 
 .header-title {
-  font-size: 1em;
+  font-size: 1.5em;
   color: #333;
   font-weight: bold;
 }
 
 /* Button Styles */
 .download-btn {
-  bottom: 60px;
-  display: block;
-  margin: 0 auto 24px auto;
-  padding: 12px 32px;
-  max-width: 250px; /* Limita el ancho */
-  width: auto; /* No ocupa todo el ancho */
-
   position: fixed;
   top: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
-
-  background: linear-gradient(90deg, #3de88f 0%, #7ffe53 100%);
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 600;
+  background: #d3d3d3;
+  color: #333;
   border: none;
-  border-radius: 50px;
+  border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
   text-decoration: none;
   transition:
     background 0.3s,
     transform 0.2s;
-     display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 24px;
 }
 
 .download-btn:hover {
-  background: linear-gradient(90deg, #3de88f 0%, #3de88f 100%);
+  background: #bfbfbf;
   transform: translateY(-2px) scale(1.03);
 }
 
@@ -222,11 +212,11 @@ h1 {
     color: #e4e6eb !important;
   }
   .download-btn {
-    background: linear-gradient(90deg, #23272b 0%, #26282b 100%);
-    color: #e4e6eb;
+    background: linear-gradient(90deg, #3de88f 0%, #7ffe53 100%);
+    color: #fff;
   }
   .download-btn:hover {
-    background: linear-gradient(90deg, #333 0%, #444 100%);
+    background: linear-gradient(90deg, #3de88f 0%, #3de88f 100%);
   }
   .card-view {
     background: #23272b;
