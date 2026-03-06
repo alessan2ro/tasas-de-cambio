@@ -78,16 +78,13 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 24px;
 }
 
 .download-btn:hover {
   background: linear-gradient(90deg, #3de88f 0%, #3de88f 100%);
   transform: translateY(-2px) scale(1.03);
 }
-
-.download-btn:hover {
-  background: linear-gradient(90deg, #3de88f 0%, #3de88f 100%);
-  transform: translateY(-2px) scale(1.03);
 }
 
 .card-view {
