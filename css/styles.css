@@ -60,31 +60,29 @@ h1 {
 
 /* Button Styles */
 .download-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+  bottom: 60px;
+  display: block;
+  margin: 0 auto 24px auto;
+  padding: 12px 32px;
+  max-width: 250px; /* Limita el ancho */
+  width: auto; /* No ocupa todo el ancho */
   background: linear-gradient(90deg, #3de88f 0%, #7ffe53 100%);
   color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
   border: none;
-  border-radius: 50%;
+  border-radius: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   text-decoration: none;
   transition:
     background 0.3s,
     transform 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
 }
 
 .download-btn:hover {
   background: linear-gradient(90deg, #3de88f 0%, #3de88f 100%);
   transform: translateY(-2px) scale(1.03);
-}
 }
 
 .card-view {
