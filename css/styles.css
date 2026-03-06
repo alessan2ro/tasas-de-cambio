@@ -63,8 +63,8 @@ h1 {
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: #d3d3d3;
   color: #333;
   border: none;
@@ -81,7 +81,7 @@ h1 {
 }
 
 .download-btn:hover {
-  background: #bfbfbf;
+  background: #f1f1f1;
   transform: translateY(-2px) scale(1.03);
 }
 
@@ -212,11 +212,11 @@ h1 {
     color: #e4e6eb !important;
   }
   .download-btn {
-    background: linear-gradient(90deg, #3de88f 0%, #7ffe53 100%);
+    background: linear-gradient(90deg, #3b3b3b 0%, #a5a5a5 100%);
     color: #fff;
   }
   .download-btn:hover {
-    background: linear-gradient(90deg, #3de88f 0%, #3de88f 100%);
+    background: linear-gradient(90deg, #dadada 0%, #727272 100%);
   }
   .card-view {
     background: #23272b;
